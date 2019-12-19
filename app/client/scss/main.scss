@@ -1,0 +1,68 @@
+@import "variables";
+@import "dice";
+
+body{ background-color:$body-color;}
+#container{
+    display: flex;
+}
+.player{
+    &.avatar{
+        width: 5px;
+        height: 5px;
+        padding: 5px;
+        &.Red{
+            background-color: red;
+        }
+        &.Blue{
+            background-color: blue;
+        }
+    }
+    &.Red{
+        color: red;
+    }
+    &.Blue{
+        color: blue;
+    }
+}
+.board {
+    background-color: $body-color;
+    .row{
+        display: flex;
+        margin: 0;
+        .cell{
+            width: 70px;
+            height: 70px;
+            border: 1px solid $cell-border-color;
+            &.color1{
+                background-color: $cell-color1;
+            }
+            &.color2{
+                background-color: $cell-color2;
+            }
+            &.color3{
+                background-color: $cell-color3;
+            }
+            &.color4{
+                background-color: $cell-color4;
+            }
+            &.color5{
+                background-color: $cell-color5;
+            }
+            &.color6{
+                background-color: $cell-color6;
+            }
+            &.color7{
+                background-color: $cell-color7;
+            }
+            &.color8{
+                background-color: $cell-color8;
+            }
+            &.color9{
+                background-color: $cell-color9;
+            }
+            &.color10{
+                background-color: $cell-color10;
+            }
+        }
+    }
+}
